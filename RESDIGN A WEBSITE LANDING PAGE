@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Boutique Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: #b56576;
+            color: #fff;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-family: 'Georgia', serif;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background: url('../../assets/images/p.jpg') no-repeat center center/cover;
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .hero h2 {
+            font-size: 3rem;
+            margin: 10px 0;
+            font-family: 'Georgia', serif;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        .hero a {
+            padding: 10px 30px;
+            background: #fff;
+            color: #b56576;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .section h2 {
+            margin-bottom: 20px;
+            font-family: 'Georgia', serif;
+        }
+        .arrangements, .portfolio, .testimonials {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .arrangement, .portfolio-item, .testimonial {
+            flex: 1 1 250px;
+            background: #f4f4f4;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .arrangement img, .portfolio-item img, .testimonial img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        footer {
+            background: #b56576;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Blossom Creations</h1>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#arrangements">Arrangements</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Welcome to Blossom Creations</h2>
+    <p>Designing floral arrangements that inspire and captivate.</p>
+    <a href="#arrangements">Explore Now</a>
+</section>
+
+<section id="about" class="section">
+    <h2>About Us</h2>
+    <p>At Blossom Creations, we believe in the art of floral design. With a passion for creativity and a commitment to quality, we craft stunning arrangements for every occasion.</p>
+</section>
+
+<section id="arrangements" class="section">
+    <h2>Featured Arrangements</h2>
+    <div class="arrangements">
+        <div class="arrangement">
+            <img src="../../assets/images/rose.jpg" alt="Rose Elegance">
+            <h3>Rose Elegance</h3>
+            <p>Classic roses arranged with a modern touch.</p>
+        </div>
+        <div class="arrangement">
+            <img src="../../assets/images/spring.jpg" alt="Spring Charm">
+            <h3>Spring Charm</h3>
+            <p>A delightful mix of tulips and daisies.</p>
+        </div>
+        <div class="arrangement">
+            <img src="../../assets/images/orchid.jpg" alt="Orchid Grace">
+            <h3>Orchid Grace</h3>
+            <p>Elegant orchids in a minimalist design.</p>
+        </div>
+    </div>
+</section>
+
+<section id="portfolio" class="section">
+    <h2>Portfolio</h2>
+    <div class="portfolio">
+        <div class="portfolio-item">
+            <img src="../../assets/images/wedding.jpg" alt="Wedding Arrangement">
+            <h3>Wedding Arrangement</h3>
+            <p>A stunning floral centerpiece for a grand wedding.</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="../../assets/images/event1.jpg" alt="Event Décor">
+            <h3>Event Décor</h3>
+            <p>Floral designs tailored for special events.</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="../../assets/images/gift1.jpeg" alt="Custom Bouquets">
+            <h3>Custom Bouquets</h3>
+            <p>Personalized floral gifts for any occasion.</p>
+        </div>
+    </div>
+</section>
+
+<section id="testimonials" class="section">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonials">
+        <div class="testimonial">
+            <img src="../../assets/images/c1.jpg" alt="Client 1">
+            <p>"The arrangements were breathtaking, and the service was exceptional!"</p>
+            <p>- Emma R.</p>
+        </div>
+        <div class="testimonial">
+            <img src="../../assets/images/c2.jpg" alt="Client 2">
+            <p>"Blossom Creations made our event unforgettable with their designs."</p>
+            <p>- James M.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>Ready to create something beautiful? Let’s connect!</p>
+    <a href="mailto:info@blossomcreations.com">info@blossomcreations.com</a>
+</section>
+
+<footer>
+    <p>&copy; 2025 Blossom Creations. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
